@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body {
+    font-size: 15px;
+    font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+header{
+    height: 152px;
+    padding-top: 50px;
+}
+
+.container{
+    width:1040px;
+    margin:0 auto;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-left h1{
+    font-size: 36px;
+    line-height: 4px;
+    padding-bottom: 20px;
+    padding-top: 65px;
+}
+
+.header-left p{
+    font-size: 18px;
+    color: #777777;
+}
+
+.header-right{
+    padding-top: 85px;
+    float: right;
+}
+
+.gnav{
+    font-size: 16.8px;
+    padding: 0 200px 0 0;
+}
+
+.gnav li{
+    float: left;
+    padding-right: 34px;
+    position: relative;
+}
+
+.gnav li ul{
+    position: absolute;
+    top: 45px;
+    left: -5px;
+    height: 0;
+    visibility: hidden;
+    background-color: white;
+}
+
+.gnav li li{
+    width:150px;
+    border: solid 1px #f0f0f0;
+    padding: 10px 20px 0 20px;
+    box-shadow: 0.5px 0.5px #f0f0f0;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.gnav li:hover ul li{
+    visibility: visible;
+    opacity: 1;
+}
+
+.gnav li:hover ul li{
+    visibility: visible;
+}
+
+.gnav .fa-solid{
+    padding-left: 13px;
+
+}
+
+.gnav li a{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.gnav li a:hover{
+    color:#C49029;
+}
+
+.search-wrapper{
+    height: 40px;
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.search{
+    height:40px;
+    width: 0px;
+    background: url(../images/icons8-検索-50.png) left center no-repeat;
+    background-size: 26px 26px;
+    padding-left: 30px;
+    font-size: 16px;
+    border: 1px solid  #e6e6e6;
+    position: absolute;
+    right: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search:focus{
+    width:180px;
+    height:34px;
+    border: 1px solid #e6e6e6;
+    cursor: text;
+}
+
+.top-wrapper{
+    height: 780px;
+    padding-top: 97px;
+}
+
+.top-wrapper p{
+    font-size: 27px;
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+    line-height: 1.8;
+    color: #777777;
+    padding-top: 100px;
+}
+
+.main-wrapper{
+    height: 1320px;
+}
+
+.main-wrapper .container{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 250px;
+
+}
+
+.text-box{
+    display: flex;
+    margin-bottom: 86px;
+    flex-direction: row;
+
+}
+
+.date{
+    padding-right: 233px;
+    width: 333px;
+}
+
+.text-area{
+    width: 700px;
+    display: inline-block;
+}
+
+.page-list li{
+    float: left;
+    font-size: 16.8px;
+    color: #777777;
+    display: inline-block;
+    border:1px solid #CCC;
+    padding: 8px 18px;
+    margin: 6px;
+    margin-top: 85px;
+    opacity: 0.5;
+}
+
+.page-list li:hover{
+    opacity: 1;
+}
+
+.page-list{
+    margin-left: 370px;
+}
+
+.page-list .this{
+    background-color: #EEEEEE;
+    color: #333333;
+    opacity: 1;
+}
+
+.profile-wrapper{
+    height:460px;
+}
+
+.profile-wrapper .container{
+    border-bottom: 1px solid #CCC;
+    height: 450px;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+.profile{
+    width: 300px;
+    float: left;
+}
+
+.profile-text{
+    font-size: 16.8px;
+    color:#666666;
+    width: 260px;
+}
+
+.profile-heading{
+    font-size: 19px;
+    padding:20px 0 40px 20px;
+    display: inline-block;
+}
+
+.fa-brands{
+    color:#666666;
+    padding-right: 18px;
+    opacity:0.7;
+    transition: 0.5s;
+}
+
+.fa-brands:hover{
+    opacity: 1;
+}
+
+.sub{
+    float: left;
+    width:210px;
+    margin-left: 32px;
+}
+
+.sub li a{
+    font-size: 16.9px;
+    text-decoration:1px underline #ddd;
+}
+
+.sub-heading{
+    padding-bottom: 42px;
+}
+
+.sub .sub-text{
+    padding-right: 40px;
+}
+
+.sub-text{
+    color:#666666
+}
+
+.sub1{
+    color: #666666;
+}
+
+.sub1 p{
+    font-size: 14.6px;
+    color:#666666;
+    padding-bottom: 10px;
+}
+
+.sub2{
+    color: #666666;
+}
+
+.sub2 li{
+    padding-bottom:26px ;
+}
+
+.sub-input{
+    margin-top:93px;
+    width: 205px;
+    height: 40px;
+    border:1px solid #e0e0e0;
+}
+
+::placeholder{
+    padding-left: 5px;
+    color: #777777;
+    font-size: 16.8px;
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+.sub li a:hover{
+    color: #C49029;
+}
+
+footer{
+    height:115px;
+    padding-top: 63px;
+}
+
+.footer-icon{
+    float: left;
+}
+
+.footer-text{
+    text-align: center;
+    color: #666666;
+    font-size: 15.8px;
+}
